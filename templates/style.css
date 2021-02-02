@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+/* font-family: 'Lato', sans-serif; */
+/* <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet"> */
+/* #fcd603 and #000 and #e6e6e6 */
+
+html {
+  font-size: 62.5%; /*16px*/
+  box-sizing: border-box;
+  /* line-height: 1.15; */
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6 rem;
+  font-family: "Lato", sans-serif;
+}
+
+.header-black {
+  height: 13px;
+  background-color: #000;
+}
+
+.separator {
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
+/*layout*/
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr; /* fraction */
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+  /* color: #e6e6e6; */
+}
+
+header {
+  grid-area: header;
+  background-color: #fcd603;
+}
+
+/* header {
+  width: 100%;
+  background-color: #fcd603;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 91px;
+  z-index: -1;
+} */
+
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #000;
+  color: #e6e6e6;
+  font-weight: 600;
+}
+
+/*common*/
+a {
+  text-decoration: none;
+}
+
+/* a:hover {
+  color: #000;
+} */
+
+header a {
+  color: #000; /*#e6e6e6;*/
+  padding: 1rem;
+}
+
+a.brand {
+  color: #000;
+  margin-left: 20px;
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: black;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+a.brand:hover {
+  color: #fcd603;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row.center {
+  justify-content: center;
+}
+
+/* img {
+  border-radius: 0.5rem; 
+} */
+
+img.medium {
+  max-width: 29rem;
+  width: 100%;
+}
+
+.card {
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #000;
+  /* border-radius: 0.5rem; */
+  margin: 1rem;
+  position: relative;
+}
+
+.card-body {
+  padding: 1rem;
+  margin-left: 1.5rem;
+}
+
+.card-body > * {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  color: #e6e6e6;
+}
+
+.card-body > *:hover {
+  opacity: 0.3;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+.rating span {
+  color: #f0c040;
+  margin: 0.1rem;
+}
